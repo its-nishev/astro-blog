@@ -1,0 +1,23 @@
+@import url("https://cdn.rawgit.com/mfd/7c7a915eb31474cc8c6a65066a4c4dc3/raw/f0f2fb94c21dea904812a53e0eb6cf0bc87f3754/GTWalsheimPro.css");
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),url(GTWalsheimProRegular.woff2) format("woff2"),url(GTWalsheimProRegular.woff) format("woff"),url(GTWalsheimProRegular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: local("GT Walsheim Pro Bold"),local("GTWalsheimProBold"),url(GTWalsheimProBold.woff2) format("woff2"),url(GTWalsheimProBold.woff) format("woff"),url(GTWalsheimProBold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal
+}
+
+body {
+	font-family: "GT Walsheim Pro", sans-serif;
+	-webkit-font-smoothening: antialiased;
+	text-rendering: optimizeLegibility;
+	overflow-wrap: break-word;
+	
+}

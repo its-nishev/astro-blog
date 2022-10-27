@@ -1,0 +1,34 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../config';
+import { FiGithub } from 'react-icons/fi/index'
+import ThemeToggle from './ThemeToggleButton'
+---
+
+<header class="fixed w-full p-2 z-20 backdrop-blur-md">
+	<div class="mx-auto max-w-3xl">
+		<nav class="flex items-center gap-3 text-base">
+			<h2 class="font-semibold tracking-tighter p-2 font-gt text-lg">
+				{SITE_TITLE}
+			</h2>
+			<div class="items-center gap-6 hidden md:flex">
+				<HeaderLink href="/">Home</HeaderLink>
+				<HeaderLink href="https://github.com/withastro/astro" target="_blank"><FiGithub />GitHub</HeaderLink>
+			</div>
+			<div class="flex-1"></div>
+			<ThemeToggle client:load />
+		</nav>
+	</div>
+</header>
+<style>
+	 a {
+		 display: inline-flex;
+		 text-decoration: none;
+		 align-items: center;
+		 gap: 4px;
+	 }
+	 a.active {
+		 font-weight: bolder;
+		 text-decoration: underline;
+	 }
+</style>
