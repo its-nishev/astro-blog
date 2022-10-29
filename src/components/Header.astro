@@ -1,7 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../config';
-import { FiGithub } from 'react-icons/fi/index'
+import { FiGithub, FiTwitter } from 'react-icons/fi/index'
 import ThemeToggle from './ThemeToggleButton'
 ---
 
@@ -13,7 +13,8 @@ import ThemeToggle from './ThemeToggleButton'
 			</h2>
 			<div class="items-center gap-6 hidden md:flex">
 				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="https://github.com/withastro/astro" target="_blank"><FiGithub />GitHub</HeaderLink>
+				<HeaderLink href="https://github.com/its-nishev/astro-blog" target="_blank"><FiGithub />GitHub</HeaderLink>
+				<HeaderLink href="https://twitter.com/its_nishev/status/1586328744230522881?cxt=HHwWgsDQjdLl4oMsAAAA"><FiTwitter />Twitter</HeaderLink>
 			</div>
 			<div class="flex-1"></div>
 			<ThemeToggle client:load />
