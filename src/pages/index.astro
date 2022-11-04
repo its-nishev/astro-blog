@@ -1,6 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Analytics from '@vercel/analytics'
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
@@ -12,6 +11,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
 	(a: any, b: any) => 
 	new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 )
+
 ---
 
 <!DOCTYPE html>
@@ -48,4 +48,3 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
 		<Footer />
 	</Body>
 </html>
-<Analytics />

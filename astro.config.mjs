@@ -3,7 +3,8 @@ import sitemap from '@astrojs/sitemap';
 import react from "@astrojs/react";
 import image from "@astrojs/image";
 import tailwind from "@astrojs/tailwind";
-import addClasses from "rehype-add-classes"
+import addClasses from "rehype-add-classes";
+import Analytics from "@vercel/analytics"
 
 export default defineConfig({
   site: 'https://example.com',
@@ -27,4 +28,8 @@ export default defineConfig({
       ]
     ]
   }
+});
+
+export default App({
+  <Analytics />
 });
